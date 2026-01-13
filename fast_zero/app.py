@@ -24,7 +24,7 @@ def read_user_by_id(user_id: int):
         raise HTTPException(
             status_code=HTTPStatus.NOT_FOUND, detail="User not found"
         )
-    
+
     return database[user_id - 1]
 
 
